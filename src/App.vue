@@ -1,33 +1,65 @@
 <template>
   <div id="app">
     <HomePage />
-    <DetailsBlogPage />
-    <!-- <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" /> -->
+    <!-- <BlogDetailsPage /> -->
   </div>
 </template>
 
 <script>
 import HomePage from "./components/pages/HomePage.vue";
-import DetailsBlogPage from "./components/DetailsBlogPage.vue";
+// import BlogDetailsPage from "./components/pages/BlogDetailsPage.vue";
 
 export default {
   name: "App",
   components: {
-    // HelloWorld,
     HomePage,
-    DetailsBlogPage,
+    // BlogDetailsPage,
   },
 };
 </script>
 
 <style lang="scss">
 #app {
-  // font-family: Avenir, Helvetica, Arial, sans-serif;
-  // -webkit-font-smoothing: antialiased;
-  // -moz-osx-font-smoothing: grayscale;
-  // text-align: center;
-  // color: #2c3e50;
-  // margin-top: 60px;
+  $familyTitle: "DM Serif Display", serif;
+  $familyText: "Jost", sans-serif;
+  $headerColor: #292f36;
+  $textColor: #4d5053;
+
+  @mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @mixin logoImage {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  @mixin logoText {
+    font-family: $familyTitle;
+    font-size: 40px;
+    font-weight: 400;
+    color: $headerColor;
+  }
+
+  @mixin h2Style {
+    font-family: $familyTitle;
+    color: $headerColor;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 62.5px;
+  }
+
+  * {
+    box-sizing: border-box;
+    font-family: $familyText;
+    color: $textColor;
+  }
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
 }
 </style>
