@@ -241,124 +241,7 @@
     <section class="blog container">
       <h2 class="blog__header blogs__title">Articles & News</h2>
       <ArticleComponent :quantity="3"></ArticleComponent>
-      <!-- <div class="blog__articles blog_page">
-        <div
-          v-for="(article, index) in articles"
-          :key="index"
-          class="blog__articles_back"
-        >
-          <div class="blog__articles_top">
-            <img
-              :src="'..//../assets/img' + article.image"
-              :alt="article.image"
-            />
-            <h3 class="blog__articles_header">{{ article.itemHeader }}</h3>
-          </div>
-          <h2 class="blog__title">{{ article.itemTitle }}</h2>
-          <div class="blog__articles_bottom">
-            <div class="blog__articles_date">{{ article.itemData }}</div>
-            <button class="blog__articles_btn">
-              <svg
-                width="70.000000"
-                height="70.000000"
-                viewBox="0 0 70 70"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-              >
-                <desc>Created with Pixso.</desc>
-                <defs />
-                <circle
-                  id="Ellipse 4"
-                  cx="35.000000"
-                  cy="35.000000"
-                  r="35.000000"
-                  transform="rotate(-180 35 35)"
-                  fill="#F4F0EC"
-                  fill-opacity="1.000000"
-                />
-                <path
-                  id="Vector"
-                  d="M32 44L40 35L32 26"
-                  stroke="#292F36"
-                  stroke-opacity="1.000000"
-                  stroke-width="2.000000"
-                  stroke-linejoin="round"
-                  stroke-linecap="round"
-                />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div> -->
     </section>
-    <!-- <section class="blog container">
-            <h2 class="blog__header">Articles & News</h2>
-            <p class="blog__description">It is a long established fact that a reader will be distracted by the of readable content of a page when lookings at its layouts the points of using.</p>
-            <div class="blog__articles">
-                <div class="blog__articles_back">
-                    <div class="blog__articles_top">
-                        <img src="img/art1.png" alt="article 1">
-                        <h3 class="blog__articles_header">Kitchan Design</h3>
-                    </div>
-                    <h2 class="blog__title">Let’s Get Solution For Building Construction Work</h2>
-                    <div class="blog__articles_bottom">
-                        <div class="blog__articles_date">26 December,2022 </div>
-                        <button class="blog__articles_btn">
-                            <svg width="70.000000" height="70.000000" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <desc>
-                                        Created with Pixso.
-                                </desc>
-                                <defs/>
-                                <circle id="Ellipse" cx="34.000122" cy="35.000000" r="35.000000" fill="#F4F0EC" fill-opacity="1.000000"/>
-                                <path id="Vector" d="M31 44L39 35L31 26" stroke="#292F36" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round" stroke-linecap="round"/>
-                                </svg>
-                        </button>
-                    </div>
-                </div>
-                <div class="blog__articles_back">
-                    <div class="blog__articles_top">
-                        <img src="img/art2.png" alt="article 2">
-                        <h3 class="blog__articles_header">Living Design</h3>
-                    </div>
-                    <h2 class="blog__title">Low Cost Latest Invented Interior Designing
-                        Ideas.</h2>
-                    <div class="blog__articles_bottom">
-                        <div class="blog__articles_date">22 December,2022 </div>
-                        <button class="blog__articles_btn"><img src="/icons/" alt="">
-                            <svg width="70.000000" height="70.000000" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <desc>
-                                        Created with Pixso.
-                                </desc>
-                                <defs/>
-                                <circle id="Ellipse" cx="34.000122" cy="35.000000" r="35.000000" fill="#F4F0EC" fill-opacity="1.000000"/>
-                                <path id="Vector" d="M31 44L39 35L31 26" stroke="#292F36" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round" stroke-linecap="round"/>
-                                </svg></button>
-                    </div>
-                </div>
-                <div class="blog__articles_back">
-                    <div class="blog__articles_top">
-                        <img src="img/art3.png" alt="article 3">
-                        <h3 class="blog__articles_header">Interior Design</h3>
-                    </div>
-                    <h2 class="blog__title">Best For Any Office & Business Interior 
-                        Solution</h2>
-                    <div class="blog__articles_bottom">
-                        <div class="blog__articles_date">25 December,2022 </div>
-                        <button class="blog__articles_svg">
-                            <svg  width="70.000000" height="70.000000" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <desc>
-                                        Created with Pixso.
-                                </desc>
-                                <defs/>
-                                <circle id="Ellipse" cx="34.000122" cy="35.000000" r="35.000000" fill="#F4F0EC" fill-opacity="1.000000"/>
-                                <path id="Vector" d="M31 44L39 35L31 26" stroke="#292F36" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round" stroke-linecap="round"/>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section> -->
     <footer class="footer container">
       <div class="footer__logo_block">
         <div class="footer__logo">
@@ -483,8 +366,8 @@ $textColor: #4d5053;
 }
 
 * {
-  margin: 0;
-  padding: 0;
+  // margin: 0;
+  // padding: 0;
   box-sizing: border-box;
   font-family: $familyText;
   color: $textColor;

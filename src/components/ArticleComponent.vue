@@ -53,8 +53,9 @@
 <script>
 export default {
   name: "ArticleComponent",
-  props: ["quantity"], //исправить согласно рекомендациям
-
+  props: {
+    quantity: Number,
+  },
   data() {
     return {
       articles: [
@@ -115,7 +116,7 @@ export default {
 };
 </script>
 
-<style lang="scss" sci="scoped">
+<style lang="scss" scoped>
 $familyTitle: "DM Serif Display", serif;
 $familyText: "Jost", sans-serif;
 $headerColor: #292f36;
